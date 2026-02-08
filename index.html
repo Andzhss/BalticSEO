@@ -30,13 +30,18 @@
     <style>
         /* --- DIZAINA SISTĒMA --- */
         :root {
-            --primary: #0f172a; /* Ļoti tumši zils/melns - nopietnībai */
-            --accent: #2563eb;  /* Spilgti zils - uzticībai un tehnoloģijām */
-            --highlight: #f59e0b; /* Dzintara krāsa - aicinājumam uz rīcību (CTA) */
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --highlight: #f59e0b;
             --bg-light: #f8fafc;
             --text-gray: #475569;
             --white: #ffffff;
             --border: #e2e8f0;
+        }
+
+        /* UZLABOJUMS: Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
         }
 
         * { box-sizing: border-box; }
@@ -216,6 +221,37 @@
             border-radius: 10px;
         }
 
+        /* --- PROCESS SADAĻA (JAUNS) --- */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            position: relative;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: white;
+            font-weight: 800;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        .process-step h3 { margin-bottom: 10px; }
+        .process-step p { color: var(--text-gray); font-size: 0.95rem; }
+
         /* --- PAKALPOJUMI (Saraksts) --- */
         .service-list {
             list-style: none;
@@ -357,7 +393,7 @@
         /* Mobilā versija */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; } /* Vienkāršībai mobilajā nerādam izvēlni, tikai CTA pogu hero daļā */
+            .nav-links { display: none; }
             .about-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -386,10 +422,7 @@
             </div>
             
             <div class="hero-badges">
-                <span>Google Analytics Certified</span>
-                <span>SEMrush Partner</span>
-                <span>HubSpot Certified</span>
-            </div>
+               </div>
         </div>
     </section>
 
@@ -454,7 +487,38 @@
         </div>
     </section>
 
-    <section class="section bg-light">
+    <section class="section bg-light" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kā mēs strādājam?</h2>
+                <p>Vienkāršs un caurspīdīgs četru soļu process līdz rezultātam.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Audits</h3>
+                    <p>Mēs veicam pilnu jūsu mājaslapas "veselības" pārbaudi un identificējam kritiskās kļūdas.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Stratēģija</h3>
+                    <p>Balstoties uz datiem, mēs izveidojam plānu atslēgvārdu iekarošanai un satura izveidei.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Optimizācija</h3>
+                    <p>Mēs labojam tehnisko kodu, optimizējam tekstus un sakārtojam Google Business profilu.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Izaugsme</h3>
+                    <p>Mēneša atskaites, jaunu saišu veidošana un pozīciju monitorings ilgtermiņā.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
         <div class="container about-grid">
             <div class="about-text">
                 <h2>Kāpēc Baltic SEO?</h2>
