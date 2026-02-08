@@ -5,28 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baltic SEO | SEO Audits un Stratēģija Rīgā</title>
     <meta name="description" content="Profesionāli SEO pakalpojumi un mājaslapu auditi Rīgā. Uzlabojiet savas pozīcijas Google meklētājā un piesaistiet vairāk klientu ar Baltic SEO.">
-    <meta name="keywords" content="SEO audits, mājaslapu optimizācija, SEO Rīga, digitālais mārketings Latvija, Google pozīcijas">
     
-    <meta property="og:title" content="Baltic SEO - Jūsu partneris Google virsotnēs">
-    <meta property="og:description" content="Datu balstīta pieeja SEO optimizācijai. Piesakies bezmaksas konsultācijai.">
-    <meta property="og:type" content="website">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Baltic SEO",
-      "image": "https://source.unsplash.com/random/1200x630/?office,seo",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Rīga",
-        "addressCountry": "LV"
-      },
-      "description": "Profesionāls SEO audits un digitālā stratēģija uzņēmumiem Latvijā un Baltijā.",
-      "priceRange": "€€"
-    }
-    </script>
-
     <style>
         /* --- DIZAINA SISTĒMA --- */
         :root {
@@ -39,7 +18,7 @@
             --border: #e2e8f0;
         }
 
-        /* UZLABOJUMS: Smooth Scrolling */
+        /* Gludā ritināšana */
         html {
             scroll-behavior: smooth;
         }
@@ -151,17 +130,6 @@
             margin: 0 auto 40px;
         }
 
-        .hero-badges {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            opacity: 0.6;
-            filter: grayscale(100%);
-        }
-        
-        .hero-badges img { height: 30px; }
-
         /* --- SKAITĻU SADAĻA --- */
         .stats {
             background: var(--primary);
@@ -221,7 +189,7 @@
             border-radius: 10px;
         }
 
-        /* --- PROCESS SADAĻA (JAUNS) --- */
+        /* --- PROCESS SADAĻA --- */
         .process-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -274,7 +242,7 @@
             margin-right: 10px;
         }
 
-        /* --- PAR MUMS / KĀPĒC MĒS --- */
+        /* --- PAR MUMS --- */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -402,7 +370,15 @@
 
     <header>
         <nav>
-            <a href="#" class="logo">Baltic<span>SEO</span></a>
+            <a href="#" class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="14" width="5" height="8" rx="1" fill="#0f172a"/>
+                    <rect x="10" y="9" width="5" height="13" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="4" width="5" height="18" rx="1" fill="#2563eb"/>
+                </svg>
+                Baltic<span>SEO</span>
+            </a>
+            
             <div class="nav-links">
                 <a href="#pakalpojumi">Pakalpojumi</a>
                 <a href="#process">Process</a>
@@ -421,9 +397,7 @@
                 <a href="#pakalpojumi" class="btn btn-outline">Uzzināt vairāk</a>
             </div>
             
-            <div class="hero-badges">
-               </div>
-        </div>
+            </div>
     </section>
 
     <div class="stats">
@@ -518,7 +492,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="par-mums">
         <div class="container about-grid">
             <div class="about-text">
                 <h2>Kāpēc Baltic SEO?</h2>
@@ -620,22 +594,30 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <a href="#" class="logo" style="color:white; margin-bottom: 20px; display:block;">Baltic<span>SEO</span></a>
+                <a href="#" class="logo" style="color:white; margin-bottom: 20px; display:flex; align-items:center; gap:10px;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="14" width="5" height="8" rx="1" fill="#ffffff"/>
+                        <rect x="10" y="9" width="5" height="13" rx="1" fill="#ffffff"/>
+                        <rect x="17" y="4" width="5" height="18" rx="1" fill="#2563eb"/>
+                    </svg>
+                    Baltic<span>SEO</span>
+                </a>
                 <p>Jūsu uzticamais digitālā mārketinga partneris Baltijā.</p>
             </div>
+            
             <div class="footer-col">
                 <h4>Pakalpojumi</h4>
                 <ul>
-                    <li><a href="#">SEO Audits</a></li>
-                    <li><a href="#">Atslēgvārdu izpēte</a></li>
-                    <li><a href="#">Google Ads (PPC)</a></li>
-                    <li><a href="#">Web Izstrāde</a></li>
+                    <li><a href="#pakalpojumi">SEO Audits</a></li>
+                    <li><a href="#pakalpojumi">Atslēgvārdu izpēte</a></li>
+                    <li><a href="#pakalpojumi">Web Izstrāde</a></li>
                 </ul>
             </div>
+            
             <div class="footer-col">
                 <h4>Uzņēmums</h4>
                 <ul>
-                    <li><a href="#about">Par Mums</a></li>
+                    <li><a href="#par-mums">Par Mums</a></li>
                     <li><a href="#cenas">Cenas</a></li>
                     <li><a href="#">Privātuma politika</a></li>
                     <li><a href="#kontakti">Kontakti</a></li>
