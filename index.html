@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Baltic SEO | Neatkarīgs SEO Eksperts un Auditi Rīgā</title>
-    <meta name="description" content="Profesionāls SEO audits un stratēģija. Strādājiet tieši ar speciālistu, nevis aģentūru. Datu balstīta pieeja Jūsu biznesa izaugsmei Google meklētājā.">
-    <meta name="keywords" content="SEO speciālists Rīga, mājaslapu optimizācija, SEO audits, digitālais mārketings, Google pozīcijas, Baltic SEO">
+    <title>Baltic SEO | Stratēģiskais SEO Partneris Jūsu Biznesam</title>
+    <meta name="description" content="Pārtrauciet īrēt satiksmi no Google – sāciet to piederēt. Neatkarīgs SEO stratēģis, kas fokusējas uz Jūsu peļņu, nevis tikai pozīcijām.">
+    <meta name="keywords" content="SEO stratēģija, biznesa izaugsme, SEO ekspertīze, Google optimizācija, Baltic SEO">
     <meta name="author" content="Baltic SEO">
     <meta name="robots" content="index, follow">
     
     <link rel="canonical" href="https://www.balticseo.lv/">
-
-    <meta property="og:title" content="Baltic SEO - Jūsu partneris Google virsotnēs">
-    <meta property="og:description" content="Neatkarīga SEO speciālista pakalpojumi. Audits, stratēģija un konsultācijas bez aģentūru uzcenojuma.">
+    <meta property="og:title" content="Baltic SEO - Investīcija, kas atmaksājas">
+    <meta property="og:description" content="Es neuzminu rezultātus. Es būvēju ilgtspējīgu izaugsmi Jūsu uzņēmumam.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.balticseo.lv/">
     
@@ -27,18 +26,17 @@
       "name": "Baltic SEO",
       "founder": {
         "@type": "Person",
-        "name": "Jūsu Vārds",
-        "jobTitle": "SEO Speciālists"
+        "name": "Jūsu Vārds", 
+        "jobTitle": "SEO Stratēģis"
       },
-      "image": "https://source.unsplash.com/random/1200x630/?office,seo",
       "url": "https://www.balticseo.lv",
-      "telephone": "+37120000000",
+      "image": "https://source.unsplash.com/random/1200x630/?growth,chart",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Rīga",
         "addressCountry": "LV"
       },
-      "description": "Profesionāls SEO audits un digitālā stratēģija uzņēmumiem Latvijā.",
+      "description": "Stratēģisks SEO partneris, kas palīdz uzņēmumiem dominēt savā nozarē.",
       "priceRange": "€€"
     }
     </script>
@@ -55,7 +53,6 @@
             --border: #e2e8f0;
         }
 
-        /* Gludā ritināšana */
         html { scroll-behavior: smooth; }
         * { box-sizing: border-box; }
 
@@ -70,7 +67,7 @@
 
         h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; color: var(--primary); }
         
-        /* HEADER & NAV */
+        /* HEADER */
         header {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -137,7 +134,7 @@
         }
         .btn-outline:hover { background: var(--bg-light); }
 
-        /* HERO */
+        /* HERO - UZLABOTS "WHY" */
         .hero {
             padding: 160px 20px 100px;
             background: linear-gradient(to bottom right, #f8fafc, #eef2ff);
@@ -145,16 +142,25 @@
         }
         .hero h1 {
             font-size: 3.5rem;
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto 20px;
             letter-spacing: -1px;
         }
         .hero span { color: var(--accent); }
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             color: var(--text-gray);
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto 40px;
+        }
+        .hero-tagline {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
         }
 
         /* STATS */
@@ -174,7 +180,7 @@
         .stat-item h3 { font-size: 2.5rem; color: var(--accent); margin: 0; }
         .stat-item p { color: #94a3b8; margin: 5px 0 0; }
 
-        /* SECTIONS GENERAL */
+        /* SECTIONS */
         .section { padding: 100px 20px; }
         .bg-light { background: var(--bg-light); }
         .container { max-width: 1200px; margin: 0 auto; }
@@ -234,8 +240,6 @@
             font-size: 1.2rem;
             box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
         }
-        .process-step h3 { margin-bottom: 10px; }
-        .process-step p { color: var(--text-gray); font-size: 0.95rem; }
 
         /* LISTS */
         .service-list { list-style: none; padding: 0; margin-top: 20px; }
@@ -253,11 +257,22 @@
             margin-right: 10px;
         }
 
-        /* ABOUT - PIELĀGOTS BEZ BILDES */
-        .about-center {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
+        /* WHY ME SECTION - NEW */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .why-content h2 { margin-bottom: 25px; }
+        .why-content p { margin-bottom: 20px; font-size: 1.1rem; }
+        .why-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid var(--accent);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: 30px;
         }
 
         /* PRICING */
@@ -359,6 +374,7 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .nav-links { display: none; }
+            .why-grid { grid-template-columns: 1fr; }
             .section { padding: 60px 20px; }
         }
     </style>
@@ -378,6 +394,7 @@
             
             <div class="nav-links">
                 <a href="#pakalpojumi">Pakalpojumi</a>
+                <a href="#kapec-es">Kāpēc Es?</a>
                 <a href="#process">Process</a>
                 <a href="#cenas">Cenas</a>
                 <a href="#kontakti" class="btn">Pieteikt Auditu</a>
@@ -388,11 +405,13 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Panāciet, lai klienti atrod <span>Jūs</span>, nevis konkurentus</h1>
-                <p>Datu balstīti SEO auditi un stratēģijas. Es neuzminu rezultātus – es tos inženierēju.</p>
+                <span class="hero-tagline">Tava mājaslapa var vairāk</span>
+                <h1>Pārtrauciet īrēt satiksmi. <br>Sāciet to <span>piederēt</span>.</h1>
+                <p>Google Ads ir īslaicīga īre. SEO ir nekustamais īpašums. Es palīdzu uzbūvēt aktīvu, kas nesīs peļņu gadiem ilgi, nevis tikai kamēr maksājat.</p>
+                
                 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <a href="#kontakti" class="btn">Saņemt manu konsultāciju</a>
-                    <a href="#pakalpojumi" class="btn btn-outline">Uzzināt vairāk</a>
+                    <a href="#kontakti" class="btn">Saņemt stratēģiju</a>
+                    <a href="#kapec-es" class="btn btn-outline">Kāpēc izvēlēties mani?</a>
                 </div>
             </div>
         </section>
@@ -401,167 +420,182 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <h3>93%</h3>
-                    <p>Tiešsaistes pieredžu sākas ar meklētāju</p>
+                    <p>Klientu, kas neskata 2. lapu</p>
                 </div>
                 <div class="stat-item">
-                    <h3>#1</h3>
-                    <p>Pozīcija saņem 33% no visiem klikšķiem</p>
+                    <h3>24/7</h3>
+                    <p>Jūsu mājaslapa strādā, kamēr Jūs guļat</p>
                 </div>
                 <div class="stat-item">
                     <h3>ROI</h3>
-                    <p>SEO sniedz visaugstāko atdevi ilgtermiņā</p>
+                    <p>Augstākā atdeve no visiem mārketinga kanāliem</p>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="pakalpojumi">
+        <section class="section" id="kapec-es">
+            <div class="container why-grid">
+                <div class="why-content">
+                    <span style="color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Mana filozofija</span>
+                    <h2>Jums nevajag "SEO aģentūru". <br>Jums vajag rezultātu.</h2>
+                    <p>Lielajās aģentūrās Jūsu bizness ir tikai viens no 50 "kontiem" Excel tabulā, ko apkalpo jaunākais asistents. </p>
+                    <p><strong>Mana pieeja ir radikāli citāda.</strong></p>
+                    <p>Es neesmu konveijers. Es esmu stratēģiskais partneris. Es iedziļinos Jūsu biznesa modelī, lai saprastu, kur slēpjas Jūsu nauda, un tad panāku, lai Google to parāda pasaulei.</p>
+                    
+                    <div class="why-box">
+                        <h4 style="margin-top:0;">Mans solījums:</h4>
+                        <ul class="service-list" style="margin-top:10px; border:none;">
+                            <li style="border:none; padding:5px 0;">Tieša komunikācija ar mani (nekādu projektu vadītāju)</li>
+                            <li style="border:none; padding:5px 0;">Caurspīdīga stratēģija bez "melnās kastes"</li>
+                            <li style="border:none; padding:5px 0;">Fokuss uz peļņu, nevis tikai "klikšķiem"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="why-image" style="background:#f1f5f9; border-radius:12px; padding:40px; text-align:center;">
+                    <div style="font-size:4rem; margin-bottom:20px;">📈</div>
+                    <h3>Izaugsme, nevis atrunas</h3>
+                    <p style="color:#64748b;">"Mani klienti novērtē to, ka es runāju biznesa valodā, nevis tehniskos terminos."</p>
+                    <div style="margin-top:20px; font-weight:700;">- Jūsu Vārds</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light" id="pakalpojumi">
             <div class="container">
                 <div class="section-header">
-                    <h2>Mani SEO Pakalpojumi</h2>
-                    <p>Atšķirībā no "pilna servisa" aģentūrām, es fokusējos uz vienu lietu – organisko atrodamību Google meklētājā.</p>
+                    <h2>Ko es daru?</h2>
+                    <p>Trīs vaļi, uz kuriem balstās veiksmīga atrašanās internetā.</p>
                 </div>
                 
                 <div class="features-grid">
                     <article class="card">
                         <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                                 <line x1="11" y1="8" x2="11" y2="14"></line>
                                 <line x1="8" y1="11" x2="14" y2="11"></line>
                             </svg>
                         </div>
-                        <h3>Tehniskais Audits</h3>
-                        <p>Es atrodu "neredzamās" kļūdas, kas bremzē jūsu lapu. Google robots redz jūsu lapu citādāk nekā cilvēks.</p>
+                        <h3>Tehniskā Veselība</h3>
+                        <p><strong>Kāpēc?</strong> Jo Google nevar iemīlēt Jūsu lapu, ja tā "klibo". Es salaboju pamatus, lai mājaslapa lido.</p>
                         <ul class="service-list">
-                            <li>Indeksācijas pārbaude</li>
-                            <li>Lapas ielādes ātrums (Core Web Vitals)</li>
-                            <li>Mobilā optimizācija</li>
+                            <li>Indeksācijas kļūdu labošana</li>
+                            <li>Ātruma optimizācija (Core Web Vitals)</li>
+                            <li>Strukturētie dati (Schema)</li>
                         </ul>
                     </article>
 
                     <article class="card">
                         <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
                                 <polyline points="17 6 23 6 23 12"></polyline>
                             </svg>
                         </div>
                         <h3>Satura Stratēģija</h3>
-                        <p>Atslēgvārdi ir tikai sākums. Es izstrādāju satura plānu, kas atbild uz klientu jautājumiem un veicina pirkumus.</p>
+                        <p><strong>Kāpēc?</strong> Jo klienti nemeklē Jūsu uzņēmumu, viņi meklē risinājumu. Es radu saturu, kas atbild un pārdod.</p>
                         <ul class="service-list">
-                            <li>Atslēgvārdu izpēte (Latvija & Baltija)</li>
-                            <li>Konkurentu analīze</li>
-                            <li>Blogu tēmu plāns</li>
+                            <li>Atslēgvārdu izpēte (ko cilvēki reāli meklē)</li>
+                            <li>Konkurentu "vājās vietas"</li>
+                            <li>Bloga un pakalpojumu teksti</li>
                         </ul>
                     </article>
 
                     <article class="card">
                         <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
                         </div>
-                        <h3>Lokālais SEO (Rīga)</h3>
-                        <p>Esiet redzami Google Maps un vietējos meklējumos, kad klienti meklē jūsu pakalpojumu Rīgā.</p>
+                        <h3>Autoritāte (Off-page)</h3>
+                        <p><strong>Kāpēc?</strong> Jo Google uzticas rekomendācijām. Es veidoju Jūsu reputāciju internetā.</p>
                         <ul class="service-list">
-                            <li>Google Business Profile optimizācija</li>
+                            <li>Google Business Profile sakārtošana</li>
                             <li>Lokālās atsauces (Citations)</li>
-                            <li>Reputācijas pārvaldība</li>
+                            <li>Kvalitatīvu saišu (Backlinks) stratēģija</li>
                         </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section bg-light" id="process">
+        <section class="section" id="process">
             <div class="container">
                 <div class="section-header">
-                    <h2>Kā notiek sadarbība?</h2>
-                    <p>Vienkāršs un caurspīdīgs četru soļu process līdz rezultātam.</p>
+                    <h2>Ceļš uz virsotni</h2>
+                    <p>Skaidrs process bez liekas birokrātijas.</p>
                 </div>
                 <div class="process-grid">
                     <div class="process-step">
                         <div class="step-number">01</div>
-                        <h3>Audits</h3>
-                        <p>Es veicu pilnu mājaslapas "veselības" pārbaudi un identificēju kritiskās kļūdas.</p>
+                        <h3>Diagnostika</h3>
+                        <p>Es atrodu problēmas, par kurām Jūs pat nezinājāt.</p>
                     </div>
                     <div class="process-step">
                         <div class="step-number">02</div>
-                        <h3>Stratēģija</h3>
-                        <p>Balstoties uz datiem, es izveidoju plānu atslēgvārdu iekarošanai un satura izveidei.</p>
+                        <h3>Plāns</h3>
+                        <p>Mēs vienojamies par stratēģiju, kas mērķēta uz ROI.</p>
                     </div>
                     <div class="process-step">
                         <div class="step-number">03</div>
-                        <h3>Optimizācija</h3>
-                        <p>Es laboju tehnisko kodu, optimizēju tekstus un sakārtoju Google profilu.</p>
+                        <h3>Darbs</h3>
+                        <p>Es veicu optimizāciju. Jūs saņemat atskaites.</p>
                     </div>
                     <div class="process-step">
                         <div class="step-number">04</div>
-                        <h3>Izaugsme</h3>
-                        <p>Mēneša atskaites, saišu veidošana un pozīciju monitorings ilgtermiņā.</p>
+                        <h3>Rezultāts</h3>
+                        <p>Jūsu telefons sāk zvanīt biežāk.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="par-mums">
-            <div class="container about-center">
-                <h2>Kāpēc strādāt ar neatkarīgu ekspertu?</h2>
-                <p>Lielajās aģentūrās Jūs pērkat "komandu", bet bieži strādājat ar junioriem. Šeit Jūs strādājat <strong>tieši ar mani</strong>.</p>
-                <p>Es esmu tehniskais SEO speciālists, kurš iedziļinās katrā projektā personīgi. Mana pieeja ir 100% caurspīdīga – bez slēptām izmaksām vai "menedžmenta" maksām.</p>
-                <div style="margin-top: 30px;">
-                    <a href="#kontakti" class="btn btn-outline">Sazināties ar mani</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="cenas">
+        <section class="section bg-light" id="cenas">
             <div class="container">
                 <div class="section-header">
-                    <h2>Pakalpojumu Cenas</h2>
-                    <p>Izvēlieties sev piemērotāko SEO audita vai apkalpošanas līmeni.</p>
+                    <h2>Investīcija Jūsu Biznesā</h2>
+                    <p>Caurspīdīgas cenas. Nekādu slēptu ikmēneša maksu par "neko".</p>
                 </div>
                 
                 <div class="features-grid">
                     <div class="pricing-card">
                         <h3>Starta Audits</h3>
                         <div class="price">€150<span>/vienreizēji</span></div>
-                        <p>Ideāli piemērots maziem uzņēmumiem un vizītkartes tipa lapām.</p>
+                        <p>Ideāli piemērots, lai saprastu, kas bremzē Jūsu lapu.</p>
                         <ul class="service-list">
-                            <li>Tehniskā stāvokļa pārbaude</li>
-                            <li>5 galveno konkurentu apskats</li>
-                            <li>Atskaites PDF formātā</li>
+                            <li>Tehniskais "Health Check"</li>
+                            <li>Konkurentu apskats</li>
+                            <li>Konkrēts darāmo darbu saraksts</li>
                         </ul>
                         <a href="#kontakti" class="btn btn-outline">Pasūtīt Auditu</a>
                     </div>
 
                     <div class="pricing-card popular">
                         <div class="popular-tag">Populārākais</div>
-                        <h3>Pilna Stratēģija</h3>
+                        <h3>Izaugsmes Stratēģija</h3>
                         <div class="price">€450<span>/vienreizēji</span></div>
-                        <p>Uzņēmumiem, kas grib dominēt savā nozarē.</p>
+                        <p>Pilna ceļa karte, kā apsteigt konkurentus 6 mēnešos.</p>
                         <ul class="service-list">
                             <li>Dziļais tehniskais audits</li>
                             <li>Atslēgvārdu stratēģija (500+ vārdi)</li>
-                            <li>Satura plāns 6 mēnešiem</li>
-                            <li>Google Business Profile sakārtošana</li>
-                            <li>1h konsultācija par ieviešanu</li>
+                            <li>Satura plāns pusgadam</li>
+                            <li>1h video konsultācija ar mani</li>
                         </ul>
-                        <a href="#kontakti" class="btn">Pasūtīt Stratēģiju</a>
+                        <a href="#kontakti" class="btn">Sākt Dominēt</a>
                     </div>
 
                     <div class="pricing-card">
-                        <h3>Mēneša SEO</h3>
+                        <h3>Mēneša Partnerība</h3>
                         <div class="price">No €300<span>/mēn</span></div>
-                        <p>Nepārtraukta izaugsme un saišu veidošana (Link Building).</p>
+                        <p>Tiem, kas grib deleģēt SEO pilnībā man.</p>
                         <ul class="service-list">
-                            <li>Ikmēneša bloga raksti</li>
-                            <li>Atpakaļsaišu veidošana (Backlinks)</li>
+                            <li>Regulāra satura veidošana</li>
+                            <li>Saišu būvniecība (Link Building)</li>
                             <li>Ikmēneša atskaites un monitorings</li>
                         </ul>
-                        <a href="#kontakti" class="btn btn-outline">Sazināties</a>
+                        <a href="#kontakti" class="btn btn-outline">Pieteikties</a>
                     </div>
                 </div>
             </div>
@@ -569,8 +603,8 @@
 
         <section class="contact-section" id="kontakti">
             <div class="container">
-                <h2>Gatavs uzlabot savas pozīcijas?</h2>
-                <p>Aizpildiet formu zemāk, un es personīgi 24h laikā nosūtīšu īsu video ar jūsu lapas ātro novērtējumu.</p>
+                <h2>Pietiek zaudēt klientus konkurentiem</h2>
+                <p>Aizpildiet formu, un es personīgi izpētīšu Jūsu lapu un nosūtīšu video ar pirmajiem ieteikumiem 24h laikā.</p>
                 
                 <div class="contact-form">
                     <form name="contact" method="POST" data-netlify="true">
@@ -587,10 +621,10 @@
                             <input type="url" id="website" name="website" placeholder="https://www.jusu-lapa.lv">
                         </div>
                         <div class="form-group">
-                            <label for="message">Ziņa / Problēma</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Vēlos uzlabot savas pozīcijas..."></textarea>
+                            <label for="message">Ziņa / Galvenais mērķis</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Vēlos palielināt pārdošanu, uzlabot pozīcijas..."></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Nosūtīt Pieteikumu Man</button>
+                        <button type="submit" class="submit-btn">Saņemt Manu Analīzi</button>
                     </form>
                 </div>
                 
@@ -613,28 +647,27 @@
                     </svg>
                     Baltic<span>SEO</span>
                 </a>
-                <p>Jūsu uzticamais digitālā mārketinga partneris Baltijā.</p>
+                <p>Neatkarīgs SEO stratēģis. Datu balstīta pieeja Jūsu biznesa izaugsmei.</p>
             </div>
             <div class="footer-col">
                 <h4>Pakalpojumi</h4>
                 <ul>
-                    <li><a href="#pakalpojumi">SEO Audits</a></li>
-                    <li><a href="#pakalpojumi">Atslēgvārdu izpēte</a></li>
-                    <li><a href="#pakalpojumi">Web Izstrāde</a></li>
+                    <li><a href="#pakalpojumi">Tehniskais Audits</a></li>
+                    <li><a href="#pakalpojumi">Satura Stratēģija</a></li>
+                    <li><a href="#cenas">Cenas</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Uzņēmums</h4>
+                <h4>Par Mani</h4>
                 <ul>
-                    <li><a href="#par-mums">Par Mani</a></li>
-                    <li><a href="#cenas">Cenas</a></li>
-                    <li><a href="#">Privātuma politika</a></li>
+                    <li><a href="#kapec-es">Filozofija</a></li>
+                    <li><a href="#process">Process</a></li>
                     <li><a href="#kontakti">Kontakti</a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2024 Baltic SEO. Visas tiesības aizsargātas. Izstrādāts Rīgā.
+            &copy; 2024 Baltic SEO. Visas tiesības aizsargātas.
         </div>
     </footer>
 
