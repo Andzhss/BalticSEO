@@ -242,20 +242,26 @@
             box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
         }
 
-        /* LISTS */
+        /* --- LIST FIXES --- */
         .service-list { list-style: none; padding: 0; margin-top: 20px; }
+        
+        /* Šeit ir GALVENAIS LABOJUMS sarakstiem */
         .service-list li {
             padding: 10px 0;
             border-bottom: 1px solid var(--border);
             color: var(--text-gray);
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Lai teksts sākas no augšas, ja ir garš */
+            justify-content: flex-start; /* Lai viss turas kreisajā pusē */
+            text-align: left;
+            gap: 12px; /* Atstarpe starp ķeksīti un tekstu */
         }
+        
         .service-list li::before {
             content: "✓";
             color: var(--accent);
             font-weight: bold;
-            margin-right: 10px;
+            flex-shrink: 0; /* Lai ķeksītis nesaspiestos */
         }
 
         /* WHY ME SECTION */
@@ -267,6 +273,28 @@
         }
         .why-content h2 { margin-bottom: 25px; }
         .why-content p { margin-bottom: 20px; font-size: 1.1rem; }
+        
+        /* --- IMAGE BOX FIX --- */
+        .why-image-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+            width: 100%; /* Nodrošina, ka karte aizņem vietu */
+        }
+        .why-image-card img {
+            width: 100%;
+            height: 300px; /* Varam mainīt augstumu, ja vajag */
+            object-fit: cover;
+            display: block;
+        }
+        .why-text-content {
+            padding: 30px;
+            text-align: center;
+            background: #f8fafc;
+        }
+        
         .why-box {
             background: white;
             padding: 30px;
@@ -389,8 +417,8 @@
             </a>
             
             <div class="nav-links">
+                <a href="#kapec-es">Kāpēc izvēlēties mani?</a>
                 <a href="#pakalpojumi">Pakalpojumi</a>
-                <a href="#kapec-es">Kāpēc Es?</a>
                 <a href="#process">Process</a>
                 <a href="#cenas">Cenas</a>
                 <a href="#kontakti" class="btn">Pieteikt Auditu</a>
@@ -403,7 +431,7 @@
             <div class="container">
                 <span class="hero-tagline">Tava mājaslapa var vairāk</span>
                 <h1>Profesionāla <span>SEO optimizācija</span> un efektīvi <span>SEO pakalpojumi</span>.</h1>
-                <p>Es neesmu kārtējā <strong>digitālā mārketinga aģentūra</strong>, kas pārdod tukšus solījumus. Es piedāvāju reālu <strong>seo mārketings</strong> stratēģiju, kas palielina peļņu.</p>
+                <p>Es neesmu kārtējā <strong>digitālā mārketinga aģentūra</strong>, kas pārdod tukšus solījumus. Es piedāvāju reālu <strong>SEO mārketinga</strong> stratēģiju, kas palielina peļņu.</p>
                 
                 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                     <a href="#kontakti" class="btn">Saņemt stratēģiju</a>
@@ -434,7 +462,7 @@
                 <div class="why-content">
                     <span style="color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:1px;">Mana filozofija</span>
                     <h2>Jums nevajag parastu "SEO aģentūru". <br>Jums vajag rezultātu.</h2>
-                    <p>Lielajās firmās Jūsu bizness ir tikai kārtējā "seo aģentūra" statistika tabulā. Mana pieeja ir personīga.</p>
+                    <p>Lielajās firmās Jūsu bizness ir tikai kārtējais konts Excel tabulā. Mana pieeja ir personīga.</p>
                     <p><strong>Kas ir SEO optimizācija manā izpratnē?</strong></p>
                     <p>Tas nav tikai par atslēgvārdiem. Tā ir pilna biznesa analīze, lai saprastu, kur slēpjas nauda.</p>
                     
@@ -443,16 +471,19 @@
                         <ul class="service-list" style="margin-top:10px; border:none;">
                             <li style="border:none; padding:5px 0;">Tieša komunikācija ar mani (nekādu projektu vadītāju)</li>
                             <li style="border:none; padding:5px 0;">Fokuss uz peļņu, nevis tikai "klikšķiem"</li>
-                            <li style="border:none; padding:5px 0;">Godīga <strong>google optimizācija</strong> bez riskiem</li>
+                            <li style="border:none; padding:5px 0;">Godīga&nbsp;<strong>google optimizācija</strong>&nbsp;bez riskiem</li>
                         </ul>
                     </div>
                 </div>
-                <div class="why-image" style="background:#f1f5f9; border-radius:12px; padding:40px; text-align:center;">
-                    <div style="font-size:4rem; margin-bottom:20px;">📈</div>
-                    <h3>Izaugsme, nevis atrunas</h3>
-                    <p style="color:#64748b;">"Es palīdzu saprast, <strong>kas ir seo</strong>, un pārvērst to peļņā."</p>
-                    <div style="margin-top:20px; font-weight:700;">- Jūsu Vārds</div>
+                
+                <div class="why-image-card">
+                    <img src="SEO photo in office.jpeg" alt="SEO process birojā" loading="lazy">
+                    <div class="why-text-content">
+                        <h3 style="margin-top:0;">Izaugsme, nevis atrunas</h3>
+                        <p style="color:#64748b; margin-bottom:0;">Es palīdzu atrast vājos punktus un pārvērst to peļņā.</p>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -473,11 +504,11 @@
                                 <line x1="8" y1="11" x2="14" y2="11"></line>
                             </svg>
                         </div>
-                        <h3>Mājas lapas optimizācija & Google Search Console</h3>
+                        <h3>Mājas lapas optimizācija</h3>
                         <p><strong>Kāpēc?</strong> Google nevar iemīlēt Jūsu lapu, ja tā "klibo". Es veicu <strong>search console</strong> auditu un salaboju tehnisko pusi.</p>
                         <ul class="service-list">
-                            <li><strong>Google Search Console</strong> kļūdu labošana</li>
-                            <li><strong>Mājas lapas optimizācija</strong> ātrumam</li>
+                            <li>Google Search Console kļūdu labošana</li>
+                            <li>Mājas lapas optimizācija ātrumam</li>
                             <li>Strukturētie dati (Schema)</li>
                         </ul>
                     </article>
@@ -490,11 +521,11 @@
                             </svg>
                         </div>
                         <h3>E komercija un Saturs</h3>
-                        <p><strong>Kāpēc?</strong> Vai Jums ir <strong>ekomercija</strong> veikals vai pakalpojumu lapa, saturs ir karalis. Es veidoju stratēģiju, kas pārdod.</p>
+                        <p><strong>Kāpēc?</strong> Neatkarīgi no tā, vai jums ir e-veikals vai pakalpojumu lapa – saturs ir panākumu atslēga.</p>
                         <ul class="service-list">
-                            <li>Atslēgvārdu izpēte (<strong>e-komercija</strong> fokuss)</li>
+                            <li>Atslēgvārdu izpēte (e-komercija fokuss)</li>
                             <li>Konkurentu "vājās vietas"</li>
-                            <li>Bloga un pakalpojumu teksti</li>
+                            <li>Satura tēmu izstrāde</li>
                         </ul>
                     </article>
 
@@ -505,12 +536,12 @@
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
                         </div>
-                        <h3>Autoritāte (Off-page)</h3>
-                        <p><strong>Kāpēc?</strong> Jo Google uzticas rekomendācijām. Es veidoju Jūsu reputāciju internetā.</p>
+                        <h3>Lokālā Redzamība (Google Business)</h3>
+                        <p><strong>Kāpēc?</strong> Jo klienti meklē pakalpojumus savā tuvumā. Es nodrošinu, lai Jūs būtu redzams kartē.</p>
                         <ul class="service-list">
-                            <li>Google Business Profile sakārtošana</li>
-                            <li>Lokālās atsauces (Citations)</li>
-                            <li>Kvalitatīvu saišu (Backlinks) stratēģija</li>
+                            <li>Google Business Profile optimizācija</li>
+                            <li>Atsauksmju (Reviews) sistēmas izveide</li>
+                            <li>Aktuāla vizuālā satura stratēģija</li>
                         </ul>
                     </article>
                 </div>
@@ -537,7 +568,7 @@
                     <div class="process-step">
                         <div class="step-number">03</div>
                         <h3>Darbs</h3>
-                        <p>Es veicu <strong>mājas lapas optimizācija</strong> darbus.</p>
+                        <p><strong>Mājas lapas optimizācija</strong> un satura veidošana.</p>
                     </div>
                     <div class="process-step">
                         <div class="step-number">04</div>
@@ -552,18 +583,18 @@
             <div class="container">
                 <div class="section-header">
                     <h2>SEO optimizācija cena un plāni</h2>
-                    <p>Caurspīdīgas izmaksas. Nekādu slēptu maksu.</p>
+                    <p>Caurspīdīgas izmaksas. Skaidrs darbu apjoms.</p>
                 </div>
                 
                 <div class="features-grid">
                     <div class="pricing-card">
                         <h3>Starta Audits</h3>
-                        <div class="price">€150<span>/vienreizēji</span></div>
-                        <p>Ideāli piemērots, lai saprastu, kas bremzē Jūsu lapu.</p>
+                        <div class="price">No €80<span>/vienreizēji</span></div>
+                        <p>Diagnostika, lai saprastu, kas bremzē Jūsu lapu.</p>
                         <ul class="service-list">
-                            <li>Tehniskais "Health Check"</li>
-                            <li>Konkurentu apskats</li>
-                            <li>Konkrēts darāmo darbu saraksts</li>
+                            <li>Tehniskais audits (līdz 300 URL)</li>
+                            <li>3 Galveno konkurentu analīze</li>
+                            <li>Kļūdu saraksts programmētājam</li>
                         </ul>
                         <a href="#kontakti" class="btn btn-outline">Pasūtīt Auditu</a>
                     </div>
@@ -571,25 +602,25 @@
                     <div class="pricing-card popular">
                         <div class="popular-tag">Populārākais</div>
                         <h3>Izaugsmes Stratēģija</h3>
-                        <div class="price">€450<span>/vienreizēji</span></div>
-                        <p>Pilna ceļa karte, kā apsteigt konkurentus 6 mēnešos.</p>
+                        <div class="price">No €250<span>/vienreizēji</span></div>
+                        <p>Pilna ceļa karte, kā apsteigt konkurentus.</p>
                         <ul class="service-list">
-                            <li>Dziļais tehniskais audits</li>
-                            <li>Atslēgvārdu stratēģija (500+ vārdi)</li>
-                            <li>Satura plāns pusgadam</li>
-                            <li>1h video konsultācija ar mani</li>
+                            <li>Dziļais audits + Top 10 lapu sakārtošana</li>
+                            <li>Atslēgvārdu stratēģija (Top 20-40 vārdi)</li>
+                            <li>Satura tēmu plāns (6 mēnešiem)</li>
+                            <li>1h Stratēģiskā konsultācija</li>
                         </ul>
                         <a href="#kontakti" class="btn">Sākt Dominēt</a>
                     </div>
 
                     <div class="pricing-card">
                         <h3>Mēneša Partnerība</h3>
-                        <div class="price">No €300<span>/mēn</span></div>
-                        <p>Tiem, kas grib deleģēt SEO pilnībā man.</p>
+                        <div class="price">No €170<span>/mēn</span></div>
+                        <p>Regulāra izaugsme un pozīciju noturēšana.</p>
                         <ul class="service-list">
-                            <li>Regulāra satura veidošana</li>
-                            <li>Saišu būvniecība (Link Building)</li>
-                            <li>Ikmēneša atskaites un monitorings</li>
+                            <li>1 apjomīgs vai 2 bloga raksti mēnesī</li>
+                            <li>Saišu piesaiste (Outreach)</li>
+                            <li>Ikmēneša pozīciju atskaite</li>
                         </ul>
                         <a href="#kontakti" class="btn btn-outline">Pieteikties</a>
                     </div>
@@ -626,6 +657,7 @@
                 
                 <p style="margin-top: 30px; opacity: 0.7;">
                     Vai rakstiet man tieši: <a href="mailto:sales@latseo.com" style="color:white;">sales@latseo.com</a><br>
+			Telefona numurs: +371 24424434 <br>
                     Rīga, Latvija
                 </p>
             </div>
